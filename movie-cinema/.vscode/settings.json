@@ -1,5 +1,9 @@
 {
     "editor.defaultFormatter": null,
-    "editor.formatOnPaste": false,
-    "editor.formatOnSave": false
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "xml.format.closingBracketNewLine": true
 }

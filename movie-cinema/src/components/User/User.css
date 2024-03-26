@@ -1,0 +1,28 @@
+.card {
+    background-color: #c5c5c5;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.card-head {
+    text-align: center;
+    font-weight: bold;
+
+    tr {
+        &:first-child {
+            background-color: #fff;
+
+            th img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.card-body {
+    text-align: center;
+}
+
+.member {
+    color: #717171;
+}
