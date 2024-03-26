@@ -7,7 +7,6 @@ import landrover from "../Images/landrover.jpg";
 import civic from "../Images/civic.jpg";
 import lambo from "../Images/lambo.jpg";
 import man from "../Images/man.png";
-import woman from "../Images/woman.png";
 
 const Main = () => {
   return (
