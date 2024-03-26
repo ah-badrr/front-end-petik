@@ -23,6 +23,13 @@
     text-align: center;
 }
 
+.card-footer {
+    button {
+        width: 100%;
+        border: 1px solid black;
+    }
+}
+
 .member {
     color: #717171;
 }

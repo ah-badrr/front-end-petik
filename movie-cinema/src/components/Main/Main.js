@@ -22,11 +22,11 @@ const Main = () => {
       <User gambar={man} member="Non Member" nama="Wahyu" />
       <User gambar={man} member="Silver" nama="Ihsan" />
       <User gambar={man} member="Diamond" nama="Fauzan" />
-      <Car beli={() => alert("Produk ditambahkan ke keranjang")} colors={["abu-abu", "hitam", "merah"]} gambar={ferrari} merk="Ferrari F40" harga={1.5} isNew="True" />
-      <Car beli={() => alert("Produk ditambahkan ke keranjang")} colors={["abu-abu", "hitam", "merah"]} gambar={lambo} merk="Lambhorghini" harga={3.5} isNew="True" />
-      <Car beli={() => alert("Produk ditambahkan ke keranjang")} colors={["abu-abu", "hitam", "merah"]} gambar={landrover} merk="Range Rover" harga={2} isNew="True" />
-      <Car beli={() => alert("Produk ditambahkan ke keranjang")} colors={["abu-abu", "hitam", "merah"]} gambar={bugati} merk="Bugati" harga={1} isNew="True" />
-      <Car beli={() => alert("Produk ditambahkan ke keranjang")} colors={["abu-abu", "hitam", "merah"]} gambar={civic} merk="Honda Civic" harga={1} isNew="True" />
+      <Car beli={() => alert("Produk ditambahkan ke keranjang")} colors={["putih", "merah"]} gambar={ferrari} merk="Ferrari F40" harga={1.5} isNew="True" />
+      <Car beli={() => alert("Produk ditambahkan ke keranjang")} colors={["kuning", "putih", "hitam"]} gambar={lambo} merk="Lambhorghini" harga={3.5} isNew="True" />
+      <Car beli={() => alert("Produk ditambahkan ke keranjang")} colors={["merah", "putih", "biru"]} gambar={landrover} merk="Range Rover" harga={2} isNew="True" />
+      <Car beli={() => alert("Produk ditambahkan ke keranjang")} colors={["hitam", "merah"]} gambar={bugati} merk="Bugati" harga={1} isNew="True" />
+      <Car beli={() => alert("Produk ditambahkan ke keranjang")} colors={["putih", "hitam", "merah"]} gambar={civic} merk="Honda Civic" harga={1} isNew="True" />
     </div>
   );
 };

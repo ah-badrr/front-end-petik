@@ -26,7 +26,7 @@ const User = (props) => {
           <tr>
             <td colSpan={2}>{member}</td>
           </tr>
-          <tr>
+          <tr className="card-footer">
             <td>
               <button onClick={message}> Message </button>
             </td>
