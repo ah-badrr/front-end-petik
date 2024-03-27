@@ -1,7 +1,7 @@
 import "./User.css";
 const User = (props) => {
-  const { nama, alamat, angkatan, hobi, isGraduate, gambar, member } = props;
-  const message = () => alert(`Profil ${nama} telah dibuka`);
+  const { nama, alamat, angkatan, hobi, isGraduate, gambar, member, message } = props;
+  // const message = () => alert(`Profil ${nama} telah dibuka`);
   const tableStyle = {
     border: "1px solid black",
     width: "300px",
