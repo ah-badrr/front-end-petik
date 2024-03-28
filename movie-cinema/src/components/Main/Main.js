@@ -10,6 +10,7 @@ import man from "../Images/man.png";
 import woman from "../Images/woman.png";
 import Movies from "../Movies/Movies";
 import Hero from "../Hero/Hero";
+import AddMovieFrom from "../AddMovieFrom/AddMovieFrom";
 
 const Main = () => {
   const datas = [
@@ -64,9 +65,6 @@ const Main = () => {
   ];
   return (
     <div className="content">
-      {datas.map((data) => {
-        return <User message={() => alert(data.message)} gambar={data.gambar} member={data.member} nama={data.nama} />;
-      })}
       {/* <User gambar={man} member="Platinum" nama="Amalun" />
       <User gambar={woman} member="Gold" nama="Raffi" />
       <User gambar={man} member="Silver" nama="Daffa Ryu" />
@@ -84,6 +82,9 @@ const Main = () => {
       <Car beli={() => alert("Produk ditambahkan ke keranjang")} colors={["putih", "hitam", "merah"]} gambar={civic} merk="Honda Civic" harga={1} isNew="True" /> */}
       <Hero />
       <Movies />
+      {datas.map((data) => {
+        return <User message={() => alert(data.message)} gambar={data.gambar} member={data.member} nama={data.nama} />;
+      })}
     </div>
   );
 };

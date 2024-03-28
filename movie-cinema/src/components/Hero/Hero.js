@@ -16,7 +16,7 @@ const Hero = () => {
             <p className="hero-button">Watch</p>
           </div>
           <div className="hero-right">
-            <img className="hero-image" src="https://picsum.photos/200/300" alt="hero-img" />
+            <img className="hero-image" src="https://picsum.photos/300/400" alt="hero-img" />
           </div>
         </section>
       </div>
