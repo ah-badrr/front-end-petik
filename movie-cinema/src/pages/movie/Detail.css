@@ -1,0 +1,36 @@
+.detail {
+    padding: 1rem 2rem;
+
+    .s {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
+    .detail {
+        padding: 1rem 2rem;
+
+        .s {
+            display: flex;
+            flex-direction: row;
+            column-gap: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .detail {
+        padding: 1rem 2rem;
+
+        .s {
+            display: flex;
+            flex-direction: row;
+            column-gap: 1.5rem;
+
+            p {
+                width: 30%;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 /* Small screen */
 .container {
-    margin: 1rem;
+    /* margin: 1rem; */
 
     .form {
         /* flex-basis: 100%; */
@@ -74,7 +74,7 @@
 @media (min-width: 992px) {
     .container {
         /* max-width: 1200px; */
-        margin: 3rem auto;
+        /* margin: 3rem auto; */
 
         .form {
             display: flex;

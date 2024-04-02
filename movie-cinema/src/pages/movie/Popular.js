@@ -11,7 +11,7 @@ const Popular = () => {
     });
   }, []);
   return (
-    <div>
+    <div style={{ padding: "1rem 2rem" }}>
       <h1>Popular</h1>
       <div className="movies-container">
         {datas.map((data) => {

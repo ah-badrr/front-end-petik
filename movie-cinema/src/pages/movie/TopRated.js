@@ -11,7 +11,7 @@ const Top = () => {
     });
   }, []);
   return (
-    <div>
+    <div style={{ padding: "1rem 2rem" }}>
       <h1>Top Rated</h1>
       <div className="movies-container">
         {datas.map((data) => {

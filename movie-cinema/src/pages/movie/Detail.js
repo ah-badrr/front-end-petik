@@ -1,24 +1,30 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { getDetailMovie } from "../../Api";
-// import Movie from "../../components/Movie/Movie";
+import { useParams } from "react-router-dom";
+import { getDetailMovie } from "../../Api.js";
+import "./Detail.css";
 
 const Detail = () => {
-  // menggunakan userParams untuk menangkap parameter id dari url
-  const [datas, setDatas] = useState([]);
+  let { id } = useParams();
+  const [movie, setMovie] = useState([]);
+
   useEffect(() => {
-    getDetailMovie().then((result) => {
-      setDatas(result);
+    getDetailMovie(id).then((result) => {
+      setMovie(result);
     });
   }, []);
 
-  console.log(`${datas}`);
-  let { id } = useParams();
+  if (!movie) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <div>
-      <h1>Detail</h1>
-      <p>Parameter Id : {id}</p>
+    <div className="detail">
+      <h1>{movie.original_title}</h1>
+      <div className="s">
+        <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`} alt={movie.original_title} />
+        <p>{movie.overview}</p>
+      </div>
     </div>
   );
 };
