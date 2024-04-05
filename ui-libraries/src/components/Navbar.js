@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavbarText } from "reactstrap";
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav } from "reactstrap";
 import { NavLink } from "react-router-dom";
 
 function NavbarComponent(args) {
@@ -28,9 +28,9 @@ function NavbarComponent(args) {
               Top Rated
             </NavLink>
           </Nav>
-          <NavbarText>
-            <NavLink to={"/login"} className="text-decoration-none text-light">Login</NavLink>
-          </NavbarText>
+          <NavLink to={"/login"} className="button is-light text-decoration-none text-primary">
+            Login
+          </NavLink>
         </Collapse>
       </Navbar>
     </div>
