@@ -24,8 +24,8 @@ function NavbarComponent(args) {
             <NavLink className="text-light text-decoration-none" to={"/dashboard"}>
               Dashboard
             </NavLink>
-            <NavLink className="text-light text-decoration-none" to={"/top"}>
-              Top Rated
+            <NavLink className="text-light text-decoration-none" to={"/course"}>
+              Course
             </NavLink>
           </Nav>
           <NavLink to={"/login"} className="button is-light text-decoration-none text-primary">
