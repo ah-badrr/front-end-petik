@@ -14,6 +14,9 @@ import DetailCoursePage from "./pages/DetailCoursePage";
 import TableCourse from "./components/course/TableCourse";
 import AddCourse from "./components/course/AddCourse";
 import NotFound from "./components/NotFound";
+import TableTrainer from "./components/trainer/TableTrainer";
+import AddTrainer from "./components/trainer/AddTrainer";
+
 function App() {
   return (
     <div className="App">
@@ -31,8 +34,8 @@ function App() {
           <Route path="/table-course" element={<TableCourse />} />
           <Route path="/course/:id" element={<DetailCoursePage />} />
           <Route path="/trainers" element={<Courses />} />
-          <Route path="/trainer/add" element={<AddCourse />} />
-          <Route path="/table-trainer" element={<TableCourse />} />
+          <Route path="/trainer/add" element={<AddTrainer />} />
+          <Route path="/table-trainer" element={<TableTrainer />} />
           <Route path="/trainer/:id" element={<DetailCoursePage />} />
         </Routes>
         {/* <Footer /> */}

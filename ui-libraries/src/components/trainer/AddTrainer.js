@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 
 const AddTrainer = () => {
   const [name, setName] = useState("");
-  const [trainerId, setTrainerId] = useState("");
-  const [desc, setDesc] = useState("");
+  const [address, setAddress] = useState("");
+  const [skill, setSkill] = useState("");
   const [file, setFile] = useState("");
   const [preview, setPreview] = useState("");
   const navigate = useNavigate();
@@ -17,15 +17,15 @@ const AddTrainer = () => {
     setPreview(URL.createObjectURL(image));
   };
 
-  const saveCourse = async (e) => {
+  const saveTrainer = async (e) => {
     e.preventDefault();
     try {
       await axios.post(
-        "https://api.sukmax.my.id/course",
+        "https://api.sukmax.my.id/trainer",
         {
           name: name,
-          trainer_id: trainerId,
-          desc: desc,
+          address: address,
+          skill: skill,
           file: file,
         },
         // agar bisa upload file
@@ -35,33 +35,33 @@ const AddTrainer = () => {
           },
         }
       );
-      // redirect ke /table-course
-      navigate("/table-course");
+      // redirect ke /table-trainer
+      navigate("/table-trainer");
     } catch (error) {
       console.log(error);
     }
   };
   return (
     <Layout>
-      <h2 className="title">Course</h2>
-      <h3 className="subtitle">Add New Course</h3>
-      <form onSubmit={saveCourse}>
+      <h2 className="title">Trainer</h2>
+      <h3 className="subtitle">Add New Trainer</h3>
+      <form onSubmit={saveTrainer}>
         <div className="field">
           <label className="label">Name</label>
           <div className="control">
-            <input className="input" type="text" placeholder="Masukkan nama course" onChange={(e) => setName(e.target.value)} />
+            <input className="input" type="text" placeholder="Masukkan nama trainer" onChange={(e) => setName(e.target.value)} />
           </div>
         </div>
         <div className="field">
-          <label className="label">Trainer ID</label>
+          <label className="label">Address</label>
           <div className="control">
-            <input className="input" type="text" onChange={(e) => setTrainerId(e.target.value)} placeholder="Masukkan trainer id" />
+            <input className="input" type="text" onChange={(e) => setAddress(e.target.value)} placeholder="Masukkan alamat" />
           </div>
         </div>
         <div className="field">
-          <label className="label">Description</label>
+          <label className="label">Skill</label>
           <div className="control">
-            <textarea className="textarea" onChange={(e) => setDesc(e.target.value)}></textarea>
+            <textarea className="textarea" onChange={(e) => setSkill(e.target.value)}></textarea>
           </div>
         </div>
         <div class="file">
