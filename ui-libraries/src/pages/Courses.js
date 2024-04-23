@@ -10,7 +10,6 @@ const Courses = () => {
     <div>
       <NavbarComponent></NavbarComponent>
       <Container className="my-5">
-        <h2 className="text-primary mb-3">Courses</h2>
         <CourseCards></CourseCards>
         {/* <TableComponent /> */}
       </Container>

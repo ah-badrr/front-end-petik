@@ -29,13 +29,11 @@ const CourseCards = () => {
                   style={{
                     width: "100%",
                     height: "100%",
-                    display: "flex",
-                    justifyContent: "space-between",
                   }}
                 >
                   <img alt="Sample" src={course.url} />
                   <CardBody className="text-center">
-                    <CardTitle tag="h5">{course.name}</CardTitle>
+                    <CardTitle className="fw-bold" tag="h5">{course.name}</CardTitle>
                     <CardText>{course.desc}</CardText>
                   </CardBody>
                 </Card>

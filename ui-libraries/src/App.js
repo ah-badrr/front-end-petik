@@ -10,7 +10,10 @@ import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import Detail from "./pages/Detail";
 import DetailCourse from "./components/DetailCourse";
-
+import DetailCoursePage from "./pages/DetailCoursePage";
+import TableCourse from "./components/course/TableCourse";
+import AddCourse from "./components/course/AddCourse";
+import NotFound from "./components/NotFound";
 function App() {
   return (
     <div className="App">
@@ -19,11 +22,18 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/course" element={<Courses />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/detail" element={<Detail />} />
-          <Route path="/course/:id" element={<DetailCourse />} />
+          <Route path="/*" element={<NotFound />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/course/add" element={<AddCourse />} />
+          <Route path="/table-course" element={<TableCourse />} />
+          <Route path="/course/:id" element={<DetailCoursePage />} />
+          <Route path="/trainers" element={<Courses />} />
+          <Route path="/trainer/add" element={<AddCourse />} />
+          <Route path="/table-trainer" element={<TableCourse />} />
+          <Route path="/trainer/:id" element={<DetailCoursePage />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>
